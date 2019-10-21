@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+	<div action="" method="get">
+		用户名：<input type="text" id="txt" />
+		密码：<input type="password" id="pwd" />
+		<button id="btn">登陆</button>
+	</div>
+	<script type="text/javascript">
+		var txt = document.getElementById("txt");
+		var pwd = document.getElementById("pwd");
+		var btn = document.getElementById("btn");
+		var code = 'ABCDE';
+		btn.onclick=function(){
+			if(pwd.value=="123"){
+			}else{
+				alert("密码不正确请重新输入");
+			}
+			do{
+                var nums=prompt('请输入验证码'+code);
+				if(nums.toLowerCase()==code.toLowerCase()){
+                    alert('通过');
+                    
+					break;
+				}else{
+					alert('错误');
+				}
+			}while(true)
+		}
+	</script>
+</body>
+</html>

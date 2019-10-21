@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<input type="text" name="txt" id="txt" value="" />
+		<input type="button" name="btn" id="btn" value="存储" />
+		<h2 id="h2"></h2>
+		<script type="text/javascript">
+			var btn=document.getElementById("btn");
+			var txt=document.getElementById("txt");
+			var h2=document.getElementById("h2");
+			btn.onclick=function(){
+				var mp= txt.value.padEnd(6,"0");
+				h2.innerHTML="您的存储金额为："+mp;
+			}
+		</script>
+	</body>
+<html>
